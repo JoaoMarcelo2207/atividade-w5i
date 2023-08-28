@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/CSS/telaCadastroEstilo.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Cadastrar</h1>
+
+            <div id="msgErro"></div>
+            <div id="msgSucesso"></div>
+
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="Digite o seu nome" required>
+                <label id="nomeLabel" for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="email" placeholder="Digite seu email" required>
+                <label id="emailLabel" for="email">Email</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+                <label id="senhaLabel" for="senha">Senha</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="ConfirmarSenha" placeholder="Digite sua senha novamente" required >
+                <label id="confirmarSenhaLabel" for="ConfirmarSenha">Confirmar senha</label>
+            </div>
+
+            <div class="justify-center">
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+
+            <div class="justify-center">
+                <hr>
+            </div>
+
+            <p>Já tem uma conta? <a href="http://localhost:8080/login">Logar-se</a></p>
+                
+
+        </div>
+    </div>
+    <script src="../JS/cadastro.js"></script>
+</body>
+</html>
